@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+    {{>navbar}}
+<div class="input-group searchbar">
+  <div class="form-outline">
+    <input type="search" id="imputCty" class="form-control" style="height:4rem; width:20rem;" />
+    {{!-- <label class="form-label" for="form1">Search</label> --}}
+  </div>
+  <span><button type="button"  class="btn btn-dark" id="smt_btn">Search</button></span>
+</div>
+{{!-- response card  --}}
+<div class="card r_card" >
+  <img id="wimg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h3 class="card-title"><b id="city_name">City Name</b></h3>
+    <p class="card-text"><h4  id="tempdom">Current Temprature:</h4></p>
+  </div>
+</div>
+{{>footer}}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+</body>
+
+</html>
